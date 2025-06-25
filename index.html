@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
+        integrity="sha512-/VYneElp5u4puMaIp/4ibGxlTd2MV3kuUIroR3NSQjS2h9XKQNebRQiyyoQKeiGE9mRdjSCIZf9pb7AVJ8DhCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cafe Racer</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="menu"><i class="ri-bar-chart-horizontal-line"></i></div>
+                <div class="language" style="margin-left: auto;">
+                    <div class="flag">
+                        <img  src="images/flag.png" alt="">
+                    </div>
+                    <div class="selected">ENG</div>
+                    <i class="ri-arrow-down-s-fill"></i>
+                </div>
+                <div class="search">
+                    <i class="ri-search-line"></i>
+                </div>
+            </div>
+            <div class="video">
+                <i class="ri-play-circle-fill"></i>
+                <div class="light-blue"></div>
+                <img class="img-1" src="images/123.png" alt="">
+            </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="text">
+                            <h2>DEMON</h2>
+                            <h2>SLAYER</h2>
+                            <p>TRIO</p>
+                        </div>
+                        <div class="top">
+                            <div class="light-blue"></div>
+                            <div class="dark-blue"></div>
+                            <div class="white"></div>
+                        </div>
+                        <img src="images/1.png" alt="">
+                        <div class="bottom">
+                            <div class="light-blue"></div>
+                            <div class="dark-blue"></div>
+                            <div class="white"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text">
+                            <h2>DEMON</h2>
+                            <h2>SLAYER</h2>
+                            <p>TRIO</p>
+                        </div>
+                        <div class="top">
+                            <div class="light-blue1"></div>
+                            <div class="dark-blue1"></div>
+                            <div class="white1"></div>
+                        </div>
+                        <img class="img-2" src="images/2.png" alt="">
+                        <div class="bottom">
+                            <div class="light-blue1"></div>
+                            <div class="dark-blue1"></div>
+                            <div class="white1"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="text">
+                           <h2>DEMON</h2>
+                            <h2>SLAYER</h2>
+                            <p>TRIO</p>
+                        </div>
+                        <div class="top">
+                            <div class="light-blue2"></div>
+                            <div class="dark-blue2"></div>
+                            <div class="white2"></div>
+                        </div>
+                        <img class="img-3" src="images/3.png" alt="">
+                        <div class="bottom">
+                            <div class="light-blue2"></div>
+                            <div class="dark-blue2"></div>
+                            <div class="white2"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="social">
+                <a href="" class="circle">
+                    Zenitsu
+                </a>
+                <a href="" class="circle">
+                    Inosuke
+                </a>
+                <a href="" class="circle">
+                    Tanjiro
+                </a>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        gsap.from(".top .light-blue", {
+            clipPath: "polygon(0 0, 100% 0, 100% 0%, 73% 0%)",
+            duration: 0.5,
+            y: -200,
+            opacity: 0
+        });
+
+       
+        gsap.from(".top .dark-blue", {
+            clipPath: "polygon(0 0, 100% 0, 100% 0%, 42% 0%)",
+            duration: 0.5,
+            y: -200,
+            opacity: 0,
+            delay: 0.2
+        });
+        gsap.from(".top .white", {
+            clipPath: "polygon(54% 0, 100% 0, 100% 0, 43% 0)",
+            duration: 0.5,
+            y: -200,
+            opacity: 0,
+            delay: 0.4
+        });
+
+        gsap.from(".bottom .light-blue", {
+            clipPath: "polygon(28% 100%, 100% 100%, 100% 100%, 47% 100%)",
+            duration: 0.5,
+            y: 200,
+            opacity: 0
+        });
+        gsap.from(".bottom .dark-blue", {
+            clipPath: "polygon(67% 100%, 100% 100%, 100% 100%, 59% 100%)",
+            duration: 0.5,
+            y: 200,
+            opacity: 0,
+            delay: 0.2
+        });
+        gsap.from(".bottom .white", {
+            clipPath: "polygon(20% 100%, 100% 100%, 100% 100%, 6% 100%)",
+            duration: 0.5,
+            y: 200,
+            opacity: 0,
+            delay: 0.4
+        });
+        gsap.from(".swiper-slide img", {
+            x: 900,
+            duration: 1,
+            delay: 0.3,
+        });
+        gsap.from(".swiper-slide h2", {
+            y: 100,
+            duration: 0.5,
+            delay: 0.3,
+            opacity: 0,
+            stagger: 0.2
+        })
+        gsap.from(".swiper-slide p", {
+            y: 100,
+            duration: 0.5,
+            delay: 0.3,
+            opacity: 0,
+        })
+        gsap.from(".video", {
+            x: 100,
+            duration: 0.5,
+            delay: 0.3,
+            opacity: 0,
+        })
+
+        var swiper = new Swiper(".swiper", {
+            direction: "vertical",
+            slidesPerView: 1,
+            spaceBetween: 30,
+            mousewheel: true,
+            speed: 1200,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            effect: "creative",
+            creativeEffect: {
+                prev: {
+                    shadow: true,
+                    translate: [0, 0, -1000],
+                },
+                next: {
+                    translate: ["100%", 0, 0],
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
